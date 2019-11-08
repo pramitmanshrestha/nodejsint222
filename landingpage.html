@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Login Form Design</title>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-image: url(pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-color:white;
+
+}
+#opt {
+height:75px;
+width:100%;
+background-color:black;
+font-family:arial;
+font-weight:bold;
+border-bottom: 2px solid black;
+}
+#opt ul{
+text-decoration:none;
+list-style:none;
+}
+#opt a{
+float:right;
+text-decoration:none;
+color:white;
+letter-spacing: 2px;
+padding:25px 30px;
+margin-left:0px;
+font-family:arial;
+}
+#opt a:hover{
+background-color:black;
+color:white;
+font-size: 20px;
+
+}
+#opt a.active{
+background-color:black;
+color:grey;
+font-size:20px;
+
+}
+*{
+margin:0px;
+padding:0px;
+}
+#logo{
+    height:100%;
+    width:20%;
+    float: left;
+    margin-left: 5%;
+    margin-top:20px;
+    color:white;
+    font-family: verdana;
+    font-size:25px;
+    letter-spacing:2px;
+}
+#udata input[type="number"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 35px;
+    color: grey;
+    font-size: 16px;
+    padding:10px;
+    border-radius:3px;
+    border:1px solid lightgrey ;
+    margin-bottom: 20px;
+}
+#udata input[type="submit"]
+{
+    height:40px;
+    width:220px;
+    background:black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+   border:none;
+   padding: 10px;
+   margin-top:20px;
+   border-radius:3px;
+}
+#udata
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin-top:150px;
+height:200px;
+width:260px;
+padding:20px;
+padding-left: 60px;
+margin-left:35%;
+}
+
+</style>
+<body>
+    <body>
+<div id="opt">
+    <div id="logo">Notes for Noobs</div>
+<nav>
+<ul>
+<li><a href="log-out" >Log out</a></li>
+<li><a href="diets">Diets</a></li>
+<li><a href="excersies">Exercises</a></li>
+<li><a href="home">Home</a></li>
+
+</ul>
+</nav>
+</div>
+
+
+<div id="udata">
+    <form method="POST" action="update-password.php">
+       <br> 
+       <input type="number" name="password" placeholder="Day"><br>
+        <input type="number" name="cnfmpass" placeholder="Weight"><br>
+        <input type="submit" name="submit">
+    </form>
+
+</div>
+
+
+</body>
+</head>
+</html>

@@ -1,0 +1,199 @@
+<html>
+<head>
+<title>Login Form Design</title>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-image: url(pic1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-color:white;
+
+}
+
+.loginbox{
+  border:1px solid black;
+    width: 30%;
+    height: 85%;
+    background-color:white;
+    color:black;
+    top: 15%;
+    left: 35%;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    position: relative;
+  margin-bottom: 20vh;
+  border-radius: 3px;
+}
+.loginbox:hover{
+  opacity: 1;
+}
+h1{
+    margin-bottom:40px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+::placeholder{
+  color:black;
+}
+.loginbox:hover{
+  box-shadow: 5px 5px 5px grey;
+}
+.loginbox input[type="text"]{
+  margin-top:15px;
+}
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    padding:10px;
+    border-radius:3px;
+    border: 1px solid black
+}
+.loginbox input[type="password"]{
+  margin-top: 15px;
+}
+.loginbox input[type="text"]:hover, input[type="password"]:hover
+{
+box-shadow:2px 2px 5px  grey;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background:black;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+    border:1px solid black;
+    margin-bottom: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background:white;
+    color:black;
+    
+    
+}
+.loginbox a{
+    text-decoration: none;
+    font-size:18px;
+    line-height: 20px;
+    color:black;
+    margin-left:0px;
+    margin-bottom: 30px;
+}
+.loginbox a:hover{
+  font-weight: bold;
+}
+
+
+#opt {
+height:78px;
+width:100%;
+background-color:black;
+font-family:arial;
+font-weight:bold;
+border-bottom: 2px solid black;
+}
+#opt ul{
+text-decoration:none;
+list-style:none;
+}
+#opt a{
+float:right;
+text-decoration:none;
+color:white;
+letter-spacing: 2px;
+padding:25px 30px;
+margin-left:0px;
+font-family:arial;
+}
+#opt a:hover{
+background-color:black;
+color:white;
+font-size: 20px;
+
+}
+#opt a.active{
+background-color:black;
+color:grey;
+font-size:20px;
+
+}
+*{
+margin:0px;
+padding:0px;
+}
+#logo{
+    height:100%;
+    width:20%;
+    float: left;
+    margin-left: 5%;
+    margin-top:20px;
+    color:white;
+    font-family: verdana;
+    font-size:25px;
+    letter-spacing:2px;
+}
+#logo img{
+  height:80%;
+  width:100%;
+}
+
+</style>
+<body>
+    <body>
+<div id="opt">
+    <div id="logo">Notes for Noobs</div>
+<nav>
+<ul>
+<li><a href="signin.html" class="active">LOGIN</a></li>
+<li><a href="contact.html">CONTACT US</a></li>
+<li><a href="about.html">ABOUT US</a></li>
+<li><a href="home.html" >HOME</a></li>
+
+</ul>
+</nav>
+</div>
+
+    
+    <div class="loginbox">
+    
+        <h1>Enter details</h1>
+        <form  method="POST" action="account-create">
+            
+            <input type="text" placeholder="Name" name="n1">
+
+            <input type="text" placeholder="Username" name="n2">
+            
+            <input type="password" placeholder="Password" name="n3">
+            
+            <input type="password" placeholder="Confirm Password" name="n4">
+
+            <input type="submit" name="submit" value="Create account">
+            </form>
+            <a href="signin">Already have an account?</a>
+        
+        
+    </div>
+
+</body>
+</head>
+</html>
